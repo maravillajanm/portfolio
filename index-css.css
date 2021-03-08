@@ -50,3 +50,27 @@ hr {
 padding: 50px 0px;
 visibility: hidden;
 }
+.icon-cards {
+  height: 100%;
+  width: auto;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.icon-cards ul {
+  padding-inline-start: 0px;
+}
+.icon-cards h2 {
+  font-size: 1.5em;
+}
+.icon-cards>i.fa {
+  font-size: 6em;
+  position: relative;
+  top: -30px;
+  color: #000;
+}
+
+#skills {
+  background-image: radial-gradient(at bottom,  #f53bac 6%, #bf63c6 25%,#5f67c1 45%,  #3576d2 55%, #30bcf7 94%);
+}
