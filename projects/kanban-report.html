@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kanban-report.css">
+    <title>Project | Kanban Report</title>
+</head>
+<body>
+    <!--Navigation-->
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+    <!--Hero-->
+
+    <section class="hero">
+    <div class='container'>
+        <div class='row'>
+            <div class="col-sm-7">                
+                <h1 class="gs_reveal">Generate routinary reports and identify items having challenges in just a <strong style="color: yellow;">few minutes!</strong></h1>
+            </div>
+            <div class="col-sm-5">
+                <img src="assets/kanban-report.png" class="img-fluid gs_reveal gs_reveal_fromRight" alt="Kanban Report">
+            </div>
+        </div>
+    </div>
+</section>
+    <!--Section One-->
+    <section class="">
+    <div id="section-one" class='container'>
+        <div class='row'>
+            <div class="col-sm-12 gs_reveal"><h2>Introduction</h2></div>
+            <div class="col-sm-6">
+                <p class="gs_reveal"><strong>Kanban Report</strong> is an Enterprise Single Web Application that uses Azure DevOps REST API to quickly generate report.</p>
+                <p class="gs_reveal"><strong>The problem was supervisors on our project are generating routinary report via Excel that takes 10-20 minutes per day</strong>. Data has to be placed on the correct cell ranges or update it to avoid errors on formulas. <strong>Items having challenges are not automatically highlighted for the supervisors to easily identify them.</strong> Overview has to be manually created for each seven areas to monitor.</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="gs_reveal_fromRight">
+                <img src="assets/kanban-report-excel-introduction-1.png" class="img-fluid gs_reveal gs_reveal_fromRight" alt="Overview look in Excel">
+                <img src="assets/kanban-report-excel-introduction-2.png" class="img-fluid gs_reveal gs_reveal_fromRight" alt="Items having Challenges look in Excel">
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--Section Two-->
+    <section class="bg-secondary">
+    <div id="section-two" class='container'>
+        <div class='row'>
+            <div class="col-sm-12 gs_reveal"><h2>Goal & Approach</h2></div>
+            <div class="col-sm">
+                <img src="assets/kanban-report-goal-approach.jpg" class="img-fluid gs_reveal gs_reveal_fromLeft" alt="I design and develop experiences that make people's lives simple.">
+            </div>
+            <div class="col-sm">
+                <p class="gs_reveal"><strong>The goal was to generate routinary report in just a few minutes.</strong> Data is extracted real-time with the use of Azure DevOps REST API. <strong>Web application algorithms will generate an Overall table and easily identify items having challenges.</strong></p>
+                <p class="gs_reveal">The approach I did was to conduct research on what is the best type of Azure DevOps API to use based on the requirements. I selected Work Items API type because it is able to get all the details and converts those to JSON data. I then used an AJAX request to get the JSON data and post it dynamically into a table. I've added JavaScript and JQuery algorithms to generate an Overview and highlight items that exceeded based on the requirements. Lastly for better look, I implemented Glassmorphism which is a UI Design Trend in 2021.</p>              
+                <p class="gs_reveal">Full list of technologies used: <strong>HTML, CSS, JavaScript, AJAX, REST API, JSON and JQuery</strong></p>
+                <p class="gs_reveal">Design Decision: <strong>User-Centered and Glassmorphism</strong></p>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <!--Section Three-->
+    <section class="">
+    <div id="section-three" class='container'>
+        <div class='row'>
+            <div class="col-sm-12 gs_reveal"><h2>Conclusion</h2></div>
+            <div class="col-sm">                
+                <p class="gs_reveal"><strong>Generating routinary report just took 1-2 minutes. Items having challenges are easily identified thru red highlights</strong>. Time saved is used on other important tasks.</p>
+            </div>
+            <div class="col-sm">
+                <img src="assets/kanban-report-conclusion.png" class="img-fluid gs_reveal gs_reveal_fromRight" alt="Kanban Report Output">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-2">© 2021 Copyright: Jan Michael Maravilla
+    </div> 
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="kanban-report.js"></script>
+</body>
+</html>

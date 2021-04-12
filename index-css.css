@@ -76,6 +76,12 @@ visibility: hidden;
   background-image: radial-gradient(at bottom,  #f53bac 6%, #bf63c6 25%,#5f67c1 45%,  #3576d2 55%, #30bcf7 94%);
 }
 
+#dashboardPane {
+background-color: blanchedalmond;
+height: auto;
+width: 100%;
+}
+
 @media screen and (max-width: 767px){
   .row {
     margin-right: 0px;

@@ -1,0 +1,69 @@
+.container-bg {
+    background-color: blue;
+}
+.container {
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.bg-secondary {
+    background-color: #ececec!important;
+}
+
+section.hero, .nav {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+section {
+    min-height: 650px;
+}
+section.hero h1, .nav ul, .nav a, .nav li{
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-family: 'Nunito', sans-serif;
+}
+.nav ul, .nav a, .nav li{
+    font-weight: 600;
+}
+section.hero img {
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer-copyright {
+    color: white;
+    font-size: 11px;
+}
+/* GSAP CSS */
+.gsap-container {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .panel {
+    position: absolute;
+    will-change: transform;
+    width: 100%;
+  }
+
+  .gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0s;
+  }
+
+  .img-fluid {
+    transition: 0.3s;
+  }

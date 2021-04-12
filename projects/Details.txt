@@ -1,0 +1,13 @@
+Idea Title: Kanban Report Tool
+Idea /Suggestion in detail:
+Get data real-time and easily generate a report with the use of Azure Devops REST API.
+
+ 
+
+Current Situation: 
+Generate report via Excel extract which takes multiple clicks, formulas and pivot table. If the data is not inserted correctly on the cell, the formula will not work as expected. Data is not extracted real-time so user will have to extract again if he/she needs an updated details.
+
+ 
+
+Expected Outcome:
+Easily generate report with just few clicks. Data is extracted real-time. Web based algorithms will generate an overall summary and highlights the ADO details that are not meeting the standards set by the business.
