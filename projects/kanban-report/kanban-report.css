@@ -1,0 +1,40 @@
+.container-bg {
+    background-color: blue;
+}
+.container {
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+}
+
+.bg-secondary {
+    background-color: #ececec!important;
+}
+
+section.hero, .nav {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+section.hero h1, .nav ul, .nav a, .nav li{
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-family: 'Nunito', sans-serif;
+}
+.nav ul, .nav a, .nav li{
+    font-weight: 600;
+}
+section.hero img {
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer-copyright {
+    color: white;
+    font-size: 11px;
+}
