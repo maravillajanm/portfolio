@@ -1,6 +1,10 @@
 body {
     font-family: 'Ubuntu', sans-serif;
 }
+
+p {
+    line-height: 2rem;
+}
 .container-bg {
     background-color: blue;
 }
@@ -11,7 +15,11 @@ padding-bottom: 50px;
 }
 
 h2 {
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: 900;
+    border-left: 5px solid #ea6813;
+    padding-left: 10px;
+    margin-bottom: 60px;
 }
 
 .bg-secondary {
@@ -43,7 +51,7 @@ section.hero h1, .nav ul, .nav a, .nav li{
 
 section.hero h1{
     font-weight: 600;
-    padding: 70px 0px;
+    padding: 60px 0px;
     line-height: 1.5em;
     visibility: hidden;
 }
@@ -52,8 +60,12 @@ section.hero img {
     border-radius: 10px;
 }
 
-#contact-me i{
+#contact-me i, #about-me i {
     font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 20px;
+    width: 20px;
+    text-align: center;
 }
 footer {
     background-color: black;
@@ -83,4 +95,36 @@ footer {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+.tech-stack-header {
+    font-weight: 900;
+    color:#ea6813;
+    border-left: 2px solid #ea6813;
+    padding-left: 10px;
+}
+
+#tech-stack img {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) { 
+    section.hero {
+    background-size: auto;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+    }
+    section.hero h1{
+        font-weight: 600;
+        padding: 50px 0px;
+    }
+}
+
+.card-title {
+    font-weight: 900;
+}
+
+#what-can-i-help-you .card {
+    border-left: 3px solid #ea6813;
+    padding-left: 10px;
 }
