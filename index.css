@@ -1,6 +1,10 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
 .container-bg {
     background-color: blue;
 }
+
 .container {
 padding-top: 50px;
 padding-bottom: 50px;
@@ -14,22 +18,43 @@ h2 {
     background-color: #ececec!important;
 }
 
-section.hero, .nav {
+
+/*section.hero, .nav {
     background: linear-gradient(to right, #4568dc, #b06ab3);
+}*/
+
+section.hero{
+    height: 100vh;
+    background-image: url("assets/front-end-hero.jpg");
+    background-size: cover;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
 }
 
 section.hero h1, .nav ul, .nav a, .nav li{
     color: white;
     text-shadow: 2px 2px 8px black;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 1;
 }
 .nav ul, .nav a, .nav li{
-    font-weight: 600;
+    font-weight: 300;
 }
+
+section.hero h1{
+    font-weight: 600;
+    padding: 70px 0px;
+    line-height: 1.5em;
+    visibility: hidden;
+}
+
 section.hero img {
     border-radius: 10px;
 }
 
+#contact-me i{
+    font-size: 1.5rem;
+}
 footer {
     background-color: black;
 }
@@ -37,4 +62,25 @@ footer {
 .footer-copyright {
     color: white;
     font-size: 11px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(255, 0, 0, 0)
+  )
+}
+
+#about-me img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }

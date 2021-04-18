@@ -27,8 +27,12 @@ function animateFrom(elem, direction) {
       ScrollTrigger.create({
         trigger: elem,
         onEnter: function() { animateFrom(elem) }, 
-        onEnterBack: function() { animateFrom(elem, -1) },
+        //onEnterBack: function() { animateFrom(elem, -1) },
       });
     });
   });
-  
+
+// Hero Animation
+//gsap.from(".hero", {duration: 2, y: "-100%"});
+gsap.from(".nameAnimation", {delay: 1, duration: 2, y: "-100%", autoAlpha: 0});
+gsap.from(".descAnimation", {delay: 2, duration: 2, y: "-100%", autoAlpha: 0});
