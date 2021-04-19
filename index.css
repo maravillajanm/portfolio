@@ -121,6 +121,11 @@ footer {
     }
 }
 
+@media screen and (min-width: 768px) { 
+    section.hero h1{
+        font-size: 5.5vh;
+    }
+}
 .card-title {
     font-weight: 900;
 }
