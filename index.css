@@ -46,12 +46,6 @@ nav {
     height: 80px;
 }
 
-@media screen and (max-width: 767px) {
-    nav {
-        display: none;
-    }
-}
-
 section.hero{
     background-image: url("assets/front-end-hero.jpg");
     background-size: cover;
@@ -62,7 +56,16 @@ section.hero{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 calc();
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+    section.hero{
+        margin-top: 0px;
+        background-position-y: 0px;
+    }
 }
 
 .hero::before {
