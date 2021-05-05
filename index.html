@@ -1,172 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="assets/JMM-Logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="assets/JMM-Logo.png" />
     <title>Jan Michael Maravilla | Front-End Web Developer</title>
-    <meta name="title" content="Jan Michael Maravilla | Front-End Web Developer">
-    <meta name="description" content="Let's connect and discuss how can I help you with your business in the digital space.">
-    <meta name="author" content="Jan Michael Maravilla">
-</head>
-<body>
+    <meta
+      name="title"
+      content="Jan Michael Maravilla | Front-End Web Developer"
+    />
+    <meta
+      name="description"
+      content="Let's connect and discuss how can I help you with your business in the digital space."
+    />
+    <meta name="author" content="Jan Michael Maravilla" />
+  </head>
+  <body>
+  <nav>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#selected-works">Selected Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tech-stack">Tech Stack</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+      </li>
+    </ul>
+  </nav>
     <!--Hero-->
     <section class="hero">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-            <li class="nav-item">
-                <a class="nav-link" href="#selected-works">Selected Works</a>
-            </li>
-          </ul>
-    <div class='container'>
-        <div class='row'>
-            <div class="col-sm-7">                
-                <h1 class="gs_reveal"><span class="nameAnimation">Hi! I am Jan Michael Maravilla.</span><br>
-                <span class='descAnimation'>A front-end web developer that incorporates UX methods to build user or customer-centered products.</span></h1>
-            </div>
-            <div class="col-sm-5">
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 hero-contents">
+            <h1 class="nameAnimation">I build <span class="highlight-text">modern looking</span> and <span class="highlight-text">intuitive to use</span> interfaces for better user experience
+            </h1>
+            <p class="descAnimation">I am an aspiring React Frontend Developer with UX background looking for a full time opportunity.</p>
+          </div>
+          <div class="col-sm-4 hero-video">
+            <!--<img
+              src="assets/Portrait.png"
+              class="img-fluid gs_reveal"
+              alt="Accenture"
+            />-->
+          </div>
         </div>
-    </div>
-</section>
-<!--About Me-->
-<section class="">
-    <div id="what-can-i-help-you" class='container'>
-        <div class='row'>
-            <div class="col-sm-12 gs_reveal"><h2>What I can help you with</h2></div>
-            <div class="col-sm-12">
-                <div class="card-deck">
-                    <div class="card gs_reveal">
-                      <div class="card-body">
-                        <h5 class="card-title">Web or Feature Development</h5>
-                        <p class="card-text">I can develop business websites or implement useful feautures on your existing websites.</p>
-                      </div>
-                    </div>
-                    <div class="card gs_reveal">
-                      <div class="card-body">
-                        <h5 class="card-title">Web Content Management</h5>
-                        <p class="card-text">I can manage your website in CMS Platforms (WordPress, Sitecore or Adobe Experience Manager).</p>
-                      </div>
-                    </div>
-                    <div class="card gs_reveal">
-                      <div class="card-body">
-                        <h5 class="card-title">Improve User Experience</h5>
-                        <p class="card-text">I can help you in conducting UX testing and build the necessary improvements for a better user or customer experience.</p>
-                      </div>
+      </div>
+    </section>
+    <div class="body-container">
+      <!--Social Proof-->
+      <section>
+        <!--Company Logo
+        <div class="company-logo">
+          <div class="row" style="margin-left: 0px; margin-right: 0px;">
+          <div class="col-12"><h4 class="gs_reveal">Projects I've worked on:</h2></div>
+            <div class="col-6">
+              <img style="float: right;"
+                src="assets/Accenture-Logo.PNG"
+                class="img-fluid gs_reveal"
+                alt="Accenture"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="assets/QBE-logo.png"
+                class="img-fluid gs_reveal"
+                alt="Accenture"
+              />
+            </div>
+          </div>
+      </div>-->
+        <div id="people-worked-with" class="container">
+          <div>
+            <h2 class="gs_reveal">People I've worked with:</h2>
+          </div>
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="card gs_reveal">
+                    <div class="card-body">
+                      <h5 class="card-title">Deliver what is expected and even beyond expectation</h5>
+                      <p class="card-text">
+                        "Jan has multiple primary tasks. With the different tasks given to him, he managed to fulfill his roles and deliver what is expected and even beyond expectation. Jan works with less supervision by subpodlead/podlead. He manages his team well and make sure that they deliver despite of heavy loads. As a matter of fact, his team standing - metrics wise is promising. All are contributors."
+                      </p>
+                      <p class="author-text">
+                        <span class="author-name">Julie Tamayo</span> - 2019 Supervisor at Accenture 
+                      </p>
                     </div>
                   </div>
-            
+                </li>
+                <li class="splide__slide">
+                  <div class="card gs_reveal">
+                    <div class="card-body">
+                      <h5 class="card-title">One of the key contributors in our team</h5>
+                      <p class="card-text">
+                        "No questions to his skills and capabilities as he is one of the key contributors in our team. With all the loads he's receiving everyday, he managed to cope with all of them and ensures completion/facilitated before he log off."
+                      </p>
+                      <p class="author-text">
+                        <span class="author-name">Shenie Palmes</span> - 2020 Supervisor at Accenture 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card gs_reveal">
+                    <div class="card-body">
+                      <h5 class="card-title">Proactive, inquisitive and thinking outside the box</h5>
+                      <p class="card-text">
+                        "Jan is not the usual leaf from the tree. He is always keen on everything on the site maintenance blogs team who is always proactive, inquisitive and thinking outside the box. This helped me understand their needs more than what I usually see. Through this, we are now establishing more features that can make the blogging experience and enablement not only better but a faster one, as well."
+                      </p>
+                      <p class="author-text">
+                        <span class="author-name">James Buenafe</span> - 2020 Product Owner at Accenture 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card gs_reveal">
+                    <div class="card-body">
+                      <h5 class="card-title">Worked directly with clients and collaborated well with his leads</h5>
+                      <p class="card-text">
+                        "Jan has worked directly with clients and collaborated well with his leads during migration/content maintenance. He's been instrumental to the success of this project. Good job Jan!"
+                      </p>
+                      <p class="author-text">
+                        <span class="author-name">Isaiah M. S. Papellero</span> - 2019 Supervisor at Accenture 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card gs_reveal">
+                    <div class="card-body">
+                      <h5 class="card-title">Dependable and reliable developer</h5>
+                      <p class="card-text">
+                        "Jan has grown to be a dependable and reliable developer. He can always be counted on to work overtime when necessary without complaint. He also asks questions and seeks guidance when not sure of what to do. Jan has also been constantly seeking new opportunities to develop his knowledge and build his experience."
+                      </p>
+                      <p class="author-text">
+                        <span class="author-name">Mark Vincent Po</span> - 2016 Former Associate Manager at Accenture 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="card gs_reveal">
+                    <div class="card-body">
+                      <h5 class="card-title">Big help to developers in understanding and implementing codes</h5>
+                      <p class="card-text">
+                        "The brownbag session conducted by Jan was a very big help to the whole team as we can visibly see the improvement of the knowledge and skills of the developers in understanding and implementing codes."
+                      </p>
+                      <p class="author-text">
+                        <span class="author-name">Rhea Mahinay</span> - 2016 Supervisor at Accenture 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
+          </div>
+      </section>
+<!--What I can help you with
+      <section class="">
+        <div id="what-can-i-help-you" class="container">
+          <div class="row">
+            <div class="col-sm-12 gs_reveal">
+              <h2>People I worked with</h2>
+            </div>
+            <div class="col-sm-12">
+              <div class="card-deck">
+                <div class="card gs_reveal">
+                  <div class="card-body">
+                    <h5 class="card-title">Web or Feature Development</h5>
+                    <p class="card-text">
+                      I can develop business websites or implement useful
+                      feautures on your existing websites.
+                    </p>
+                  </div>
+                </div>
+                <div class="card gs_reveal">
+                  <div class="card-body">
+                    <h5 class="card-title">Web Content Management</h5>
+                    <p class="card-text">
+                      I can manage your website in CMS Platforms (WordPress,
+                      Sitecore or Adobe Experience Manager).
+                    </p>
+                  </div>
+                </div>
+                <div class="card gs_reveal">
+                  <div class="card-body">
+                    <h5 class="card-title">Improve User Experience</h5>
+                    <p class="card-text">
+                      I can help you in conducting UX testing and build the
+                      necessary improvements for a better user or customer
+                      experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!--Tech Stack-->
+            <!--Projects-->
+            <section class="">
+              <div id="selected-works" class="container">
+                <div class="row">
+                  <div class="col-sm-12 gs_reveal"><h2>Selected Works</h2></div>
+                  <div class="col-sm-12">
+                      <div class="card gs_reveal">
+                        <img
+                          src="assets/kanban-report-conclusion.jpg"
+                          class="card-img-top"
+                          alt="Kanban Report Web App"
+                        />
+                        <div class="card-body">
+                          <a
+                            href="projects/kanban-report/kanban-report.html"
+                            target="_blank"
+                            ><h5 class="card-title col-sm-9 col-lg-8">Kanban Report Web App</h5></a
+                          >
+                          <p class="card-text col-sm-9 col-lg-8">
+                            An enterprise single web application that uses Azure DevOps REST API to quickly generate report.
+                          </p>
+                          <a
+                            href="projects/kanban-report/kanban-report.html"
+                            class="btn btn-primary"
+                            target="_blank"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                      <div class="card gs_reveal">
+                        <img
+                          src="assets/asean-hub-index.jpg"
+                          class="card-img-top"
+                          alt="H&PS ASEAN People and Learning Hub"
+                        />
+                        <div class="card-body">
+                          <a href="projects/asean-hub/asean-hub.html" target="_blank"
+                            ><h5 class="card-title col-sm-9 col-lg-8">
+                              H&PS ASEAN People and Learning Hub
+                            </h5></a
+                          >
+                          <p class="card-text col-sm-9 col-lg-8">
+                            An enterprise website that is created from scratch using HTML, CSS and JavaScript.
+                          </p>
+                          <a
+                            href="projects/asean-hub/asean-hub.html"
+                            class="btn btn-primary"
+                            target="_blank"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                      <div class="card gs_reveal">
+                        <img
+                          src="assets/ReactJS.png"
+                          class="card-img-top"
+                          alt="ReactJS"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title col-sm-9 col-lg-8">Coming Soon: ReactJS Project</h5>
+                          <p class="card-text col-sm-9 col-lg-8">
+                            Currently learning ReactJS on my free as I aspire to be a MERN Stack Developer.
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+ <!--About Me-->
+ <section class="">
+  <div id="about-me" class="container">
+    <div class="row">
+      <div class="col-sm-12 gs_reveal"><h2>About me</h2></div>
+      <div class="col-sm-7">
+        <p class="gs_reveal">
+          I hold a bachelor’s degree in Psychology from University of San
+          Jose - Recoletos, Philippines. I've attended courses on (1)
+          <strong>Web Development with HTML5, CSS3 & Bootstrap</strong>
+          and (2)
+          <strong
+            >Comprehensive JavaScript and jQuery Programming : Hands-On at
+            ActiveLearning, Inc. Philippines</strong
+          >. I also advocate UX principles in development and have a
+          certificate on
+          <strong
+            >Introduction to User Experience Design from Georgia Institute
+            of Technology, US.</strong
+          >
+        </p>
+        <p class="gs_reveal">
+          I am currently working at
+          <strong>Accenture, Philippines</strong> and have
+          <strong
+            >more than 5 years of work experience related to web
+            development</strong
+          >. I am proficient with frontend languages: HTML, CSS, and
+          JavaScript. I am also knowledgeable with content management,
+          project delivery, software development life cycle, and Agile
+          methodology.
+        </p>
+      </div>
+      <div class="col-sm-5">
+        <div class="gs_reveal_fromRight">
+          <img
+            src="assets/Red and Beige Holidays Card.jpg"
+            class="img-fluid gs_reveal gs_reveal_fromRight"
+            alt="I design and develop experiences that make people's lives simple."
+          />
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-    <!--Tech Stack-->
-    <section class="bg-secondary">
-    <div id="tech-stack" class='container'>
-        <div class='row'>
+      <!--Tech Stack-->
+      <section class="">
+        <div id="tech-stack" class="container">
+          <div class="row">
             <div class="col-sm-12 gs_reveal"><h2>Tech Stack</h2></div>
             <div class="col-sm-6">
-            <div class="gs_reveal_fromRight">
-                <img src="projects/kanban-report/assets/kanban-report-goal-approach.jpg" class="img-fluid gs_reveal gs_reveal_fromLeft" alt="I design and develop experiences that make people's lives simple.">
-            </div>
+              <div class="gs_reveal_fromRight">
+                <img
+                  src="projects/kanban-report/assets/kanban-report-goal-approach.jpg"
+                  class="img-fluid gs_reveal gs_reveal_fromLeft"
+                  alt="I design and develop experiences that make people's lives simple."
+                />
+              </div>
             </div>
             <div class="col-sm-6">
-                <p class="gs_reveal"><span class="tech-stack-header">Languages</span><br> <strong>HTML, CSS and JavasScript</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">Frameworks</span><br> <strong>Bootstrap, jQuery and GSAP</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">Web Technologies</span><br> <strong>REST API, AJAX and JSON</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">Industry Knowledge</span><br> <strong>Agile Methodologies, User Experience (UX) and Responsive Web Design.</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">UX Tools</span><br> <strong>Figma and Adobe Photoshop</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">UX Methods</span><br> <strong>Surveys, Usability Testing, Huerestic Review, User Stories, Personas and Experience Map</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">CMS</span><br> <strong>WordPress, Sitecore and Adobe Experience Manager</strong></p>
-                <p class="gs_reveal"><span class="tech-stack-header">Soft Skills</span><br> <strong>Client-facing, Empathy to users' pain points, Desire to solve issues or problems, Project & Resource Management.</strong></p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">Languages</span><br />
+                <strong>HTML, CSS and JavasScript</strong>
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">Frameworks</span><br />
+                <strong>ReactJS, Bootstrap, jQuery and GSAP</strong>
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">Web Technologies</span><br />
+                <strong>REST API, AJAX and JSON</strong>
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">Industry Knowledge</span><br />
+                <strong
+                  >Agile Methodologies, User Experience (UX) and Responsive Web
+                  Design.</strong
+                >
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">UX Tools</span><br />
+                <strong>Figma and Adobe Photoshop</strong>
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">UX Methods</span><br />
+                <strong
+                  >Surveys, Usability Testing, Huerestic Review, User Stories,
+                  Personas and Experience Map</strong
+                >
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">CMS</span><br />
+                <strong
+                  >WordPress, Sitecore and Adobe Experience Manager</strong
+                >
+              </p>
+              <p class="gs_reveal">
+                <span class="tech-stack-header">Soft Skills</span><br />
+                <strong
+                  >Client-facing, Empathy to users' pain points, Desire to solve
+                  issues or problems, Project & Resource Management.</strong
+                >
+              </p>
             </div>
-        </div>
-    </div>
-</section>
-    <!--Section Two-->
-    <section class="">
-    <div id="about-me" class='container'>
-        <div class='row'>
-            <div class="col-sm-12 gs_reveal"><h2>About me</h2></div>
-            <div class="col-sm-7">
-                <p class="gs_reveal">I hold a bachelor’s degree in Psychology from University of San Jose - Recoletos, Philippines. I've attended courses on (1) <strong>Web Development with HTML5, CSS3 & Bootstrap</strong> and (2) <strong>Comprehensive JavaScript and jQuery Programming : Hands-On at ActiveLearning, Inc. Philippines</strong>. I also advocate UX principles in development and have a certificate on <strong>Introduction to User Experience Design from Georgia Institute of Technology, US.</strong></p>
-                <p class="gs_reveal">I am currently working in <strong>Accenture, GBSN Philippines</strong> and have <strong>more than 5 years of work experience related to web development</strong>. I am proficient with frontend languages: HTML, CSS, and JavaScript. I am also knowledgeable with content management, project delivery, software development life cycle, and Agile methodology.</p>
-                <p class="gs_reveal"><i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/jan-michael-maravilla/" target="_blank">Check out my full profile in LinkedIn</a></p>
-            </div>
-            <div class="col-sm-5">
-                <div class="gs_reveal_fromRight">
-                    <img src="assets/Red and Beige Holidays Card.jpg" class="img-fluid gs_reveal gs_reveal_fromRight" alt="I design and develop experiences that make people's lives simple.">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--Section Three-->
-    <section class="bg-secondary">
-    <div id="selected-works" class='container'>
-        <div class='row'>
-            <div class="col-sm-12 gs_reveal"><h2>Selected Works</h2></div>
-            <div class="col-sm-12">                
-                <div class="card-deck">
-                    <div class="card gs_reveal">
-                      <img src="assets/kanban-report-conclusion.jpg" class="card-img-top" alt="Kanban Report Web App">
-                      <div class="card-body">
-                        <a href="projects/kanban-report/kanban-report.html" target="_blank"><h5 class="card-title">Kanban Report Web App</h5></a>
-                        <p class="card-text">An enterprise single web application that uses Azure DevOps REST API to quickly generate report.</p>
-                        <a href="projects/kanban-report/kanban-report.html" class="btn btn-primary" target="_blank">Read More</a>
-                      </div>
-                    </div>
-                    <div class="card gs_reveal">
-                      <img src="assets/asean-hub-index.jpg" class="card-img-top" alt="H&PS ASEAN People and Learning Hub">
-                      <div class="card-body">
-                        <a href="projects/asean-hub/asean-hub.html" target="_blank"><h5 class="card-title">H&PS ASEAN People and Learning Hub</h5></a>
-                        <p class="card-text">An enterprise website that is created from scratch using HTML, CSS and JavaScript.</p>
-                        <a href="projects/asean-hub/asean-hub.html" class="btn btn-primary" target="_blank">Read More</a>
-                      </div>
-                    </div>
-                    <div class="card gs_reveal">
-                      <img src="assets/ReactJS.png" class="card-img-top" alt="ReactJS">
-                      <div class="card-body">
-                        <h5 class="card-title">Coming Soon: ReactJS Project</h5>
-                        <p class="card-text">Currently learning ReactJS on my free time to further widen my JavaScript Stack.</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Section Four-->
-<section class="">
-    <div id="contact-me" class='container'>
-        <div class='row'>
+          </div>
+          <div class="row connect-with-me">
             <div class="col-sm-12 gs_reveal"><h2>Connect with me</h2></div>
-            <div class="col-sm">                
-                <p class="gs_reveal"><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/jan-michael-maravilla/" target="_blank">Let's connect in LinkedIn</a></p>
+            <div class="col-sm">
+              <p class="gs_reveal">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ><a
+                  href="https://www.linkedin.com/in/jan-michael-maravilla/"
+                  target="_blank"
+                  >Let's connect in LinkedIn</a
+                >
+              </p>
             </div>
             <div class="col-sm">
-                <p class="gs_reveal"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:maravillajanm@gmail.com" target="_blank">Email me on GMail</a></p>
+              <p class="gs_reveal">
+                <i class="fa fa-envelope" aria-hidden="true"></i
+                ><a href="mailto:maravillajanm@gmail.com" target="_blank"
+                  >Email me on GMail</a
+                >
+              </p>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<footer class="page-footer font-small blue">
-    <div class="footer-copyright text-center py-2">© 2021 Jan Michael Maravilla. All rights reserved.
-    </div> 
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-<script src="index.js"></script>
-</body>
+      </section>
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-2">
+        © 2021 Jan Michael Maravilla. All rights reserved.
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

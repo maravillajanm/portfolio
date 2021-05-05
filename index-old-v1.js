@@ -34,5 +34,5 @@ function animateFrom(elem, direction) {
 
 // Hero Animation
 //gsap.from(".hero", {duration: 2, y: "-100%"});
-gsap.from(".nameAnimation", {delay: 1.5, duration: 2, y: "-100%", autoAlpha: 0});
-gsap.from(".descAnimation", {delay: 2.5, duration: 2, y: "-100%", autoAlpha: 0});
+gsap.from(".nameAnimation", {delay: 1, duration: 2, y: "-100%", autoAlpha: 0});
+gsap.from(".descAnimation", {delay: 2, duration: 2, y: "-100%", autoAlpha: 0});

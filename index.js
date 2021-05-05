@@ -34,5 +34,23 @@ function animateFrom(elem, direction) {
 
 // Hero Animation
 //gsap.from(".hero", {duration: 2, y: "-100%"});
-gsap.from(".nameAnimation", {delay: 1, duration: 2, y: "-100%", autoAlpha: 0});
-gsap.from(".descAnimation", {delay: 2, duration: 2, y: "-100%", autoAlpha: 0});
+gsap.from(".nameAnimation", {delay: 1.5, duration: 2, y: "-100%", autoAlpha: 0});
+gsap.from(".descAnimation", {delay: 2.5, duration: 1, y: "-100%", autoAlpha: 0});
+
+//Splide
+if ( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 1,
+  } ).mount();
+ } else {
+  new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 1,
+    focus  : 'center',
+    padding: {
+      right: '10rem',
+      left : '10rem',
+    },
+  } ).mount();
+ }
