@@ -46,6 +46,12 @@ nav {
     height: 80px;
 }
 
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+}
+
 section.hero{
     background-image: url("assets/front-end-hero.jpg");
     background-size: cover;
@@ -74,12 +80,6 @@ section.hero{
     rgba(0, 0, 0, 0.5)
   )
 }
-@media screen and (max-width: 768px) {
-    .hero::before {
-margin-top: 80px;
-}
-}
-
 
 section.hero h1, .nav ul, .nav a, .nav li{
     color: white;
